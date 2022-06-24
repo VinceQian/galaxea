@@ -31,7 +31,7 @@ server <- function(input, output) {
     } else {
       tags$img(src = locations %>%
                  filter(X == input$location) %>%
-                 pull(pic), style="transform:rotate(90deg);", width = "100%")
+                 pull(pic), style="transform:rotate(90deg);", width = "80%")
     }
   })
   

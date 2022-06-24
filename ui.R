@@ -184,8 +184,8 @@ ui <- navbarPage(
   "Galaxea二号机",
   header = "",
   theme = shinytheme("flatly"),
-  introduction,
-  chart_1_page,
+  #introduction,
+  #chart_1_page,
   chart_2_page,
   chart_3_page
   #conclusion
