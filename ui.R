@@ -23,7 +23,8 @@ introduction <- tabPanel(
       actionButton(inputId = "data_source",
                    label = "我点！",
                    class = "btn-primary",
-                   onclick = "window.open('http://www.scz.czedu.cn/html/article5408971.html')")
+                   onclick = "window.open('http://www.scz.czedu.cn/html/article5408971.html')"
+                   )
     ),
     
     mainPanel(
@@ -51,13 +52,6 @@ chart_1_page <- tabPanel(
 chart_2_page <- tabPanel(
   "EP11",
   titlePanel("EP11. 学年终总结"),
-  
-  sidebarLayout(
-    sidebarPanel(
-      p("图都没放呢。。")
-    ),
-    
-    mainPanel(
       h3(""),
       p("春季学期在不声不响中就这么过去了，不过infomatics的final project用到的这个shinyapp挺香，可以免费发布1GB以下的网页app。
         （靠代码用完1GB对我来说显然是不可能的）于是正好夏天也不打算上课，那不如就慢慢把这个网站做起来吧。"),
@@ -99,12 +93,54 @@ chart_2_page <- tabPanel(
       p("说是远方，其实都没出西雅图。。。这一部分自然是是这一年去过的地方了。从雷尼尔山脚下的南瓜地，到城市中心的博物馆，
         再到山脚下的海滩，这一年去过的地方还真不少。这还多亏了冬季学期上的景观设计课，给了我一份西雅图景观打卡地推荐，
         于是上个学期一到周末就到处逛，靠着学生卡全城公交地铁免费的buff，可算是赚麻了。（雾）"),
-      
-      selectInput(inputId = "location",
-                  label = "选择地点",
-                  choices = locations$name,
-                  selected = "Carpinito Bros Pumpkin Patch & Corn Maze 南瓜农场&玉米迷宫"),
-      htmlOutput("image"),
+      sidebarLayout(
+        sidebarPanel(
+          radioButtons(
+            inputId = "location",
+            label = h4("选择地点"),
+            choiceNames = c("Carpinito Bros Pumpkin Patch & Corn Maze 南瓜农场&玉米迷宫",
+                            "Pacific Place / Downtown 太古广场/市中心",
+                            "Chinatown / International District 中国城/国际街区",
+                            "Henry Art Gallery 亨利美术展览馆",
+                            "Union Bay Natural Area 联合湾自然区",
+                            "Northwest African American Museum 西北非洲裔美国人博物馆",
+                            "Volunteer Park 志愿者公园",
+                            "Lakeview Cemetery 湖景墓园",
+                            "Ballard Locks 水门",
+                            "West Point Lighthouse / Discovery Park 西点灯塔/探索公园",
+                            "Space Needle / Seattle Center 太空针塔/西雅图中心",
+                            "Hing Hay Park 庆喜公园",
+                            "Gas Works Park 煤气厂公园",
+                            "Woodland Park Zoo 林地公园动物园",
+                            "Golden Gardens Park 金色花园",
+                            "Museum of Pop Culture 流行文化博物馆",
+                            "Chihuly Garden and Glass 奇胡利玻璃艺术园",
+                            "Seattle Aquarium 西雅图水族馆",
+                            "Elliott Bay 埃利奥特湾",
+                            "Pike Place Market 派克市场"),
+            choiceValues = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20),
+            selected = 1
+          )
+        ),
+    
+        mainPanel(
+          fluidRow(
+            column(10, align="center",
+                   htmlOutput("space1"),
+                   htmlOutput("image"),
+                   htmlOutput("space2"),
+                   h4("初次到访日"),
+                   textOutput("date"),
+                   h4("一言"),
+                   textOutput("intro"),
+                   h4("理想情景"),
+                   textOutput("scene"),
+                   h4("注意事项"),
+                   textOutput("notice"),
+            )
+          )
+        )
+      ),
       h3("学习"),
       p("说到底，来这里还是来学习的。这一年的成绩对比起大一显然是拉胯了，大二的课自然是更难的，
         于是每学期都有课上着上着莫名翻车。（多少是有点摆烂了）那么都学了些啥呢。。。讲真，学期一结束就忘的差不多了。
@@ -120,8 +156,6 @@ chart_2_page <- tabPanel(
         大概是独自一人的我更无拘无束了吧。记得很久以前，我便有了写本小说的想法，然而已经咕咕咕了n年了，
         也许照这么下去，明年的某天我可能会真的开始写？谁知道呢。。。（此处需要进行一次塔罗牌的翻）不过至少这个夏天，
         我想我会过得很充实——至少能把这个网站做的很完备吧。（现在是个究极半成品）")
-    )
-  )
 )
 
 # Chart 3 page - bar chart
@@ -151,7 +185,7 @@ ui <- navbarPage(
   header = "",
   theme = shinytheme("flatly"),
   introduction,
-  #chart_1_page,
+  chart_1_page,
   chart_2_page,
   chart_3_page
   #conclusion
