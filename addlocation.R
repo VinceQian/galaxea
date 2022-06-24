@@ -11,7 +11,7 @@ write.csv(locations,file = filename)
 
 #太古广场
 newlocation <- data.frame("2","Pacific Place / Downtown 太古广场/市中心",
-                       "2021-12-21","https://github.com/VinceQian/galaxea/blob/main/pic/IMG_1174.JPG?raw=true",
+                       "2021-12-21","https://github.com/VinceQian/galaxea/blob/main/pic/1.jpeg?raw=true",
                        "圣诞前夕，冬日的冷雨，街道上的火树银花和广场内的节日氛围。",
                        "冬至日的海底捞大餐和餐后的小电影。",
                        "附近的电影院挺多，别买错票。海底捞唱生日歌时记得录视频。")
@@ -153,7 +153,7 @@ write.table(newlocation, file = filename, sep = ",",
             col.names = FALSE, row.names = FALSE)
 
 #Golden Gardens Park 金色花园
-newlocation <- data.frame("15","Hing Hay Park 庆喜公园",
+newlocation <- data.frame("15","Golden Gardens Park 金色花园",
                           "2022-3-22","https://github.com/VinceQian/galaxea/blob/main/pic/IMG_3446.JPG?raw=true",
                           "沙滩，排球，音乐，游艇，蓝天白云，和金色的阳光。",
                           "开派对咯！",
