@@ -9,6 +9,8 @@ library("shinythemes")
 library("htmltools")
 library("maps")
 
+locations <- read.csv("locations.csv")
+
 # Introduction page
 introduction <- tabPanel(
   "主页",
@@ -17,8 +19,7 @@ introduction <- tabPanel(
   sidebarLayout(
     sidebarPanel(
       h2("啊这"),
-      tags$img(src = "https://nccid.ca/wp-content/uploads/sites/2/2021/02/COVID-Varients_Twitter.png", width = "100%"),
-      p(" "),
+      #htmlOutput("image"),
       actionButton(inputId = "data_source",
                    label = "我点！",
                    class = "btn-primary",
@@ -98,6 +99,12 @@ chart_2_page <- tabPanel(
       p("说是远方，其实都没出西雅图。。。这一部分自然是是这一年去过的地方了。从雷尼尔山脚下的南瓜地，到城市中心的博物馆，
         再到山脚下的海滩，这一年去过的地方还真不少。这还多亏了冬季学期上的景观设计课，给了我一份西雅图景观打卡地推荐，
         于是上个学期一到周末就到处逛，靠着学生卡全城公交地铁免费的buff，可算是赚麻了。（雾）"),
+      
+      selectInput(inputId = "location",
+                  label = "选择地点",
+                  choices = locations$name,
+                  selected = "Carpinito Bros Pumpkin Patch & Corn Maze 南瓜农场&玉米迷宫"),
+      htmlOutput("image"),
       h3("学习"),
       p("说到底，来这里还是来学习的。这一年的成绩对比起大一显然是拉胯了，大二的课自然是更难的，
         于是每学期都有课上着上着莫名翻车。（多少是有点摆烂了）那么都学了些啥呢。。。讲真，学期一结束就忘的差不多了。
@@ -106,7 +113,7 @@ chart_2_page <- tabPanel(
       p("显然，去年夏天我上课了，然而今年并不打算上。（这也是为啥现在就写学年总结了）众所周知，本人至今没有专业，
         于是必不可能3年毕业。然而，按学分来算的话，我已经117/180了。（180就能毕业）并且按学校规定，学分最多只能210，
         所以夏天想上课的话学分必须选少点，不然到时候学分会爆，然而这样就很亏。所以不如躺了，反正学分只多不少。"),
-      p("关于专业，我已经申请到了atmospheric science & data science，不过可以等9月informatics的结果再看。"),
+      p("关于专业，我已经可以选atmospheric science & data science，不过可以等9月informatics的结果再看。"),
       h3("梦幻"),
       p("也许是太久不见了的缘故吧，这一年来梦做的不少，曾经的时光，印象深刻的人，都时不时闯进我都梦中，让我沉醉其中，
         却又在醒来后怅然若失。（多少是回忆催人老了）但新鲜的想法与古怪的脑洞也时常光顾，鼓励着我去尝试些新事物。
@@ -143,7 +150,7 @@ ui <- navbarPage(
   "Galaxea二号机",
   header = "",
   theme = shinytheme("flatly"),
-  #introduction,
+  introduction,
   #chart_1_page,
   chart_2_page,
   chart_3_page
