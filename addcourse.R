@@ -693,13 +693,36 @@ write.table(newcourse, file = filename, sep = ",",
             append = TRUE, quote = TRUE,
             col.names = FALSE, row.names = FALSE)
 
+#AMATH352
+newcourse <- data.frame("26","AMATH352: Applied Linear Algebra And Numerical Analysis",
+                        "Spring 2022",3,3.5,"AMATH 应用数学",
+                        "我的应用数学第二课，主要关注计算机计算的误差问题，
+                        讨论各种算法在计算机环境下的稳定性，
+                        以及一些对于矩阵和特征值的算法。",
+                        "教授是Anne Greenbaum，一位出生于1951年的老一辈应用数学家，
+                        ，也是我们教科书的编写者。显然，这是一位究极大佬。
+                        作为图形操作界面还未出现时就研究计算机算法的人，
+                        她至今依旧保留着一些有趣的习惯——比如控制台用地出神入化，
+                        干啥都是输代码，基本没见她用过鼠标。
+                        然而这位神仙并不十分能理解我这种憨憨的学习能力，
+                        于是讲得有那么yi些快。（是我不配了）",
+                        "每周有一次大作业，一学期有两次考试。
+                        我想我考期末时多少是有些神智不清，于是成绩便只是差强人意了。",
+                        "由于本质上是节数学课，自然是没有合作的。",
+                        "经过这一年的三节数学课，我算是明白自己数学水平的极限了。
+                        从今往后，如无必要必不再选数学课，这简直是拖低GPA的神器啊。")
+
+write.table(newcourse, file = filename, sep = ",",
+            append = TRUE, quote = TRUE,
+            col.names = FALSE, row.names = FALSE)
+
 #PHYS123
-newcourse <- data.frame("26","PHYS123: Waves, Light, And Heat",
+newcourse <- data.frame("27","PHYS123: Waves, Light, And Heat",
                         "Spring 2022",5,4.0,"PHYS 物理",
                         "物理第三课，基于微积分的波，光和热力学。
                         也许是连续上起来有了手感，这学期学的莫名得心应手。
                         在平均分65的情况下，我的平均分到了接近90，
-                        于是完美收官。由于目前没有从事相关行业的想法，
+                        于是完美收官。由于并没有搞物理的想法，
                         这大概便是大学的最后一节物理课了。
                         （说不定我这辈子物理水平的巅峰就是这了）
                         以4.0结束也算是个不错的句号了。
@@ -727,29 +750,6 @@ newcourse <- data.frame("26","PHYS123: Waves, Light, And Heat",
                         谈到当时上海的封控问题，火星上的冰川，亚马逊的员工待遇，
                         我俩合演电影的可能性……总之话题十分跳跃，
                         最后聊了1个钟头，得亏了那是那天最后一节课。")
-
-write.table(newcourse, file = filename, sep = ",",
-            append = TRUE, quote = TRUE,
-            col.names = FALSE, row.names = FALSE)
-
-#AMATH352
-newcourse <- data.frame("27","AMATH352: Applied Linear Algebra And Numerical Analysis",
-                        "Spring 2022",3,3.5,"AMATH 应用数学",
-                        "我的应用数学第二课，主要关注计算机计算的误差问题，
-                        讨论各种算法在计算机环境下的稳定性，
-                        以及一些对于矩阵和特征值的算法。",
-                        "教授是Anne Greenbaum，一位出生于1951年的老一辈应用数学家，
-                        ，也是我们教科书的编写者。显然，这是一位究极大佬。
-                        作为图形操作界面还未出现时就研究计算机算法的人，
-                        她至今依旧保留着一些有趣的习惯——比如控制台用地出神入化，
-                        干啥都是输代码，基本没见她用过鼠标。
-                        然而这位神仙并不十分能理解我这种憨憨的学习能力，
-                        于是讲得有那么yi些快。（是我不配了）",
-                        "每周有一次大作业，一学期有两次考试。
-                        我想我考期末时多少是有些神智不清，于是成绩便只是差强人意了。",
-                        "由于本质上是节数学课，自然是没有合作的。",
-                        "经过这一年的三节数学课，我算是明白自己数学水平的极限了。
-                        从今往后，如无必要必不再选数学课，这简直是拖低GPA的神器啊。")
 
 write.table(newcourse, file = filename, sep = ",",
             append = TRUE, quote = TRUE,
