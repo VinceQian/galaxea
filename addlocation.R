@@ -209,7 +209,7 @@ write.table(newlocation, file = filename, sep = ",",
 
 #Elliott Bay
 newlocation <- data.frame("20","Pike Place Market 派克市场",
-                          "2022-6-11","https://github.com/VinceQian/galaxea/blob/main/locationpic/pike.jpeg?raw=true",
+                          "2022-6-11","https://github.com/VinceQian/galaxea/blob/main/locationpic/pike.jpeg",
                           "西雅图著名的小商品市场。",
                           "在旧物市场翻箱倒柜。",
                           "市场在下午5点左右陆续关门。人流量巨大，记得戴口罩。")

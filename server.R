@@ -7,42 +7,18 @@ library(plotly)
 library(ggplot2)
 
 locations <- read.csv("locations.csv")
+courses <- read.csv("courses.csv")
+quarter <- read.csv("quarter.csv")
 
-# Define server function 23561618
+# Define server function
 server <- function(input, output) {
-  
-  output$space1 = renderUI({
-    if (input$location %in% c(2,3,6,16,18)){
-      HTML(paste(" ", " ", sep = '<br/>'),
-           '<br/>',
-           paste(" ", " ", sep = '<br/>'))
-    }
-  })
-  
+
+  #EP11  
   output$image = renderUI({
-    if (!input$location %in% c(2,3,5,6,16,18)){
       tags$img(src = locations %>%
                  filter(X == input$location) %>%
                  pull(pic), width = "100%")
-    } else if (input$location == 5) {
-      tags$img(src = locations %>%
-                 filter(X == input$location) %>%
-                 pull(pic), style="transform:rotate(180deg);", width = "100%")
-    } else {
-      tags$img(src = locations %>%
-                 filter(X == input$location) %>%
-                 pull(pic), style="transform:rotate(90deg);", width = "80%")
-    }
   })
-  
-  output$space2 = renderUI({
-    if (input$location %in% c(2,3,6,16,18)){
-      HTML(paste(" ", " ", sep = '<br/>'),
-           '<br/>',
-           paste(" ", " ", sep = '<br/>'))
-    }
-  })
-  
   output$date <- renderText({
     paste(locations %>%
             filter(X == input$location) %>%
@@ -62,5 +38,34 @@ server <- function(input, output) {
     paste(locations %>%
             filter(X == input$location) %>%
             pull(notice))
+  })
+  output$course <- renderUI({
+    tagList(
+      fluidRow(
+        column(12,
+      h4("内容"),
+      paste(courses %>%
+              filter(X == input$course) %>%
+              pull(intro)),
+      h4("教授"),
+      paste(courses %>%
+              filter(X == input$course) %>%
+              pull(professor)),
+      h4("作业"),
+      paste(courses %>%
+              filter(X == input$course) %>%
+              pull(ass)),
+      h4("合作"),
+      paste(courses %>%
+              filter(X == input$course) %>%
+              pull(peer)),
+      h4("其他"),
+      paste(courses %>%
+              filter(X == input$course) %>%
+              pull(tip)),
+      h4("")
+        )
+      )
+    )
   })
 }

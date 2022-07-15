@@ -10,7 +10,6 @@ library("htmltools")
 library("maps")
 
 locations <- read.csv("locations.csv")
-courses <- read.csv("courses.csv")
 
 # Introduction page
 introduction <- tabPanel(
@@ -49,11 +48,11 @@ chart_1_page <- tabPanel(
   )
 )
 
-# EP11
+# Chart 2 page - scatter plot
 chart_2_page <- tabPanel(
-  "EP11.大二总结",
-  titlePanel("EP11. 大二总结"),
-      h6("2022-06-19"),
+  "EP11",
+  titlePanel("EP11. 学年终总结"),
+      h3(""),
       p("春季学期在不声不响中就这么过去了，不过infomatics的final project用到的这个shinyapp挺香，可以免费发布1GB以下的网页app。
         （靠代码用完1GB对我来说显然是不可能的）于是正好夏天也不打算上课，那不如就慢慢把这个网站做起来吧。"),
       p("这个春季学期算是我到西雅图之后过的最自闭的一段时间了，简单来说就是啥有意思的事都没干，
@@ -98,9 +97,28 @@ chart_2_page <- tabPanel(
         sidebarPanel(
           radioButtons(
             inputId = "location",
-            label = h4("地点"),
-            choiceNames = locations$name,
-            choiceValues = locations$X,
+            label = h4("选择地点"),
+            choiceNames = c("Carpinito Bros Pumpkin Patch & Corn Maze 南瓜农场&玉米迷宫",
+                            "Pacific Place / Downtown 太古广场/市中心",
+                            "Chinatown / International District 中国城/国际街区",
+                            "Henry Art Gallery 亨利美术展览馆",
+                            "Union Bay Natural Area 联合湾自然区",
+                            "Northwest African American Museum 西北非洲裔美国人博物馆",
+                            "Volunteer Park 志愿者公园",
+                            "Lakeview Cemetery 湖景墓园",
+                            "Ballard Locks 水门",
+                            "West Point Lighthouse / Discovery Park 西点灯塔/探索公园",
+                            "Space Needle / Seattle Center 太空针塔/西雅图中心",
+                            "Hing Hay Park 庆喜公园",
+                            "Gas Works Park 煤气厂公园",
+                            "Woodland Park Zoo 林地公园动物园",
+                            "Golden Gardens Park 金色花园",
+                            "Museum of Pop Culture 流行文化博物馆",
+                            "Chihuly Garden and Glass 奇胡利玻璃艺术园",
+                            "Seattle Aquarium 西雅图水族馆",
+                            "Elliott Bay 埃利奥特湾",
+                            "Pike Place Market 派克市场"),
+            choiceValues = c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20),
             selected = 1
           )
         ),
@@ -108,7 +126,9 @@ chart_2_page <- tabPanel(
         mainPanel(
           fluidRow(
             column(10, align="center",
+                   htmlOutput("space1"),
                    htmlOutput("image"),
+                   htmlOutput("space2"),
                    h4("初次到访日"),
                    textOutput("date"),
                    h4("一言"),
@@ -125,26 +145,8 @@ chart_2_page <- tabPanel(
       p("说到底，来这里还是来学习的。这一年的成绩对比起大一显然是拉胯了，大二的课自然是更难的，
         于是每学期都有课上着上着莫名翻车。（多少是有点摆烂了）那么都学了些啥呢。。。讲真，学期一结束就忘的差不多了。
         不过还是结合记住的一星半点和以前写的课评给每门课做个总结吧。（其实是教授吐槽大赏）"),
-      sidebarLayout(
-        sidebarPanel(
-          radioButtons(
-            inputId = "course",
-            label = h4("课程"),
-            choiceNames = courses$name[16:27],
-            choiceValues = c(16:27),
-            selected = 16
-          )
-        ),
-        
-        mainPanel(
-          fluidRow(
-            column(10,
-                   htmlOutput("course")
-            )
-          )
-        )
-      ),
-      p("去年夏天我上课了，然而今年并不打算上。（这也是为啥现在就写学年总结了）众所周知，本人至今没有专业，
+      p("另：把家里蹲一年的课也一起写了，这样可以显得GPA比较高"),
+      p("显然，去年夏天我上课了，然而今年并不打算上。（这也是为啥现在就写学年总结了）众所周知，本人至今没有专业，
         于是必不可能3年毕业。然而，按学分来算的话，我已经117/180了。（180就能毕业）并且按学校规定，学分最多只能210，
         所以夏天想上课的话学分必须选少点，不然到时候学分会爆，然而这样就很亏。所以不如躺了，反正学分只多不少。"),
       p("关于专业，我已经可以选atmospheric science & data science，不过可以等9月informatics的结果再看。"),
