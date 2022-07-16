@@ -9,8 +9,8 @@ library("shinythemes")
 library("htmltools")
 library("maps")
 
-locations <- read.csv("locations.csv")
-courses <- read.csv("courses.csv")
+locations <- read.csv("location/locations.csv")
+courses <- read.csv("course/courses.csv")
 
 # Introduction page
 introduction <- tabPanel(

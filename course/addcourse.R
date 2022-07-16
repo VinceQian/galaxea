@@ -1,6 +1,6 @@
 library(dplyr)
 
-filename <- "courses.csv"
+filename <- "course/courses.csv"
 
 #CSE142
 courses <- data.frame(name = c("CSE142: Computer Programming I"),
@@ -784,5 +784,5 @@ credit_t <- display %>%
 stat_t <- merge(gpa_t,credit_t) %>%
   arrange(desc(sum))
 
-write.csv(stat_q,file = "quarter.csv")
-write.csv(stat_t,file = "type.csv")
+write.csv(stat_q,file = "course/quarter.csv")
+write.csv(stat_t,file = "course/type.csv")

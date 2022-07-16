@@ -6,9 +6,8 @@ library(shiny)
 library(plotly)
 library(ggplot2)
 
-locations <- read.csv("locations.csv")
-courses <- read.csv("courses.csv")
-quarter <- read.csv("quarter.csv")
+locations <- read.csv("location/locations.csv")
+courses <- read.csv("course/courses.csv")
 
 # Define server function
 server <- function(input, output) {
@@ -21,7 +20,7 @@ server <- function(input, output) {
            pull(name)),
       tags$img(src = locations %>%
                  filter(X == input$location) %>%
-                 pull(pic), width = "100%"),
+                 pull(pic), width = "90%"),
       h4("初次到访日"),
       paste(locations %>%
               filter(X == input$location) %>%
