@@ -6,8 +6,8 @@ library(shiny)
 library(plotly)
 library(ggplot2)
 
-locations <- read.csv("location/locations.csv")
-courses <- read.csv("course/courses.csv")
+locations <- read.csv("locations.csv")
+courses <- read.csv("courses.csv")
 
 # Define server function
 server <- function(input, output) {

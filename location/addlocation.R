@@ -1,9 +1,9 @@
-filename <- "location/locations.csv"
+filename <- "locations.csv"
 
 #南瓜农场
 locations <- data.frame(name = c("Carpinito Bros Pumpkin Patch & Corn Maze 南瓜农场&玉米迷宫"),
                 date = c("2021-10-31"),
-                pic = c("https://raw.githubusercontent.com/VinceQian/galaxea/main/location/locationpic/pumpkinfarm.JPG"),
+                pic = c("https://raw.githubusercontent.com/VinceQian/galaxea/main/location/locationpic/pumpkinfarm.jpg"),
                 intro = c("秋日的雪山，遍地南瓜和一旁巨大的玉米地迷宫构成了万圣节组队鬼混的绝佳地点。"),
                 scene = c("与一群睿智的队友共度万圣节。"),
                 notice = c("备好雨靴。谨慎选择路痴队友。"))

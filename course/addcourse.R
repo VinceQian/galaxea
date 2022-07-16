@@ -1,6 +1,6 @@
 library(dplyr)
 
-filename <- "course/courses.csv"
+filename <- "courses.csv"
 
 #CSE142
 courses <- data.frame(name = c("CSE142: Computer Programming I"),
