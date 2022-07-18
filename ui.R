@@ -11,21 +11,16 @@ library("maps")
 
 source("pages/homepage.R")
 source("pages/ep11.R")
-
-# Chart 3 page - bar chart
-ep1_10 <- tabPanel(
-  "EP1-10",
-  titlePanel("以前的日志会放这（还没放呢）"),
-  
-  sidebarLayout(
-    sidebarPanel(
-    ),
-    
-    mainPanel(
-      h3("去QQ看去")
-    )
-  )
-)
+source("pages/ep10.R")
+source("pages/ep9.R")
+source("pages/ep8.R")
+source("pages/ep7.R")
+source("pages/ep6.R")
+source("pages/ep5.R")
+source("pages/ep4.R")
+source("pages/ep3.R")
+source("pages/ep2.R")
+source("pages/ep1.R")
 
 ui <- navbarPage(
   "Galaxea二号机",
@@ -35,6 +30,15 @@ ui <- navbarPage(
   navbarMenu("Ep",
              ep11,
              "----",
-             ep1_10,
+             ep10,
+             ep9,
+             ep8,
+             ep7,
+             ep6,
+             ep5,
+             ep4,
+             ep3,
+             ep2,
+             ep1
   ),
 )
