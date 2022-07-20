@@ -71,6 +71,10 @@ ep5 <- tabPanel(
   tags$img(src = paste0(link,"5.jpeg"), width = "80%", style=sty),
   p(""),
   tags$img(src = paste0(link,"6.jpeg"), width = "80%", style=sty),
+  p(""),
+  HTML("<iframe src='//player.bilibili.com/player.html?aid=601039456&bvid=BV1yB4y1a7if&cid=777335535&page=1&danmaku=0&high_quality=1' 
+       allowfullscreen='allowfullscreen' 
+       width='100%' height='800' scrolling='no' frameborder='0' align='middle'></iframe>"),
   hr(),
   p("[*]比起每周的总结，果然还是片刻的随想更值得铭记——
     全放一起写就成汇报工作，毫无美感了。果然还是不能太偷懒。"),
