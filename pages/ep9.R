@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/9."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep9 <- tabPanel(
   "EP9. 2022WI 第九周",
   titlePanel("EP9. 2022WI 第九周"),
@@ -14,6 +17,7 @@ ep9 <- tabPanel(
   p("当煤与钢逐渐淡出工业的中心，老去的厂房停下了曾经推动世界运转的滚滚黑烟，
     安然休憩于草木之中，见证着下一代人们的欢声笑语，天空一碧如洗。"),
   p("（很浪漫啊有没有）"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "80%", style=sty),
   hr(),
   h4("《Capitalism will kill us》"),
   p("同样是在煤气厂公园，一场反对资本主义的小集会被我们撞了个正着。
@@ -24,6 +28,7 @@ ep9 <- tabPanel(
     临走前，我们得知他其实是一位生物学家，
     因为申请经费的时候被亚马逊搞了于是在某英国NGO的支持下搞了这次活动。
     （这可太有趣了）"),
+  tags$img(src = paste0(link,"2.jpeg"), width = "80%", style=sty),
   hr(),
   h4("静 夜 思"),
   p("在连着两天和7位同学合作了3个final的初稿后，我却有些迷茫。
@@ -41,5 +46,6 @@ ep9 <- tabPanel(
     另一个则是香港出生的在上海上小学的住澳大利亚的人，
     只能说他们俩的中文水平和我的英语水平旗鼓相当。
     讲道理，听到他们说“Since we are all Chinese”的时候居然有种违和感。"),
-  p("[***] 在图书馆的卫生间里看到的对话：")
+  p("[***] 在图书馆的卫生间里看到的对话："),
+  tags$img(src = paste0(link,"3.jpeg"), width = "60%", style=sty),
 )

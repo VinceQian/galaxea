@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/6."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep6 <- tabPanel(
   "EP6. 2022WI 第六周",
   titlePanel("EP6. 2022WI 第六周"),
@@ -11,8 +14,14 @@ ep6 <- tabPanel(
     穿过铁路桥时正巧有火车经过，那声音和速度属实是把老古董这个词展现到极致了。
     （这种铁路还不翻新我确实是没想到的）不过运河口的生态保护做得挺好，
     水鸟很多，还看到了海豹，但火车一来全润了。"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"2.jpeg"), width = "80%", style=sty),
   p("入海口附近是别墅区，每座房子的设计居然都挺不错。
     （但离铁路这么近头上还老有飞机他们不觉得吵的吗）"),
+  tags$img(src = paste0(link,"3.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"4.jpeg"), width = "80%", style=sty),
   hr(),
   h4("《塞翁失马》"),
   p("为了让每个小组的实验报告不至于趋同，教授灵光一闪，

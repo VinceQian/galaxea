@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/8."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep8 <- tabPanel(
   "EP8. 2022WI 第八周",
   titlePanel("EP8. 2022WI 第八周"),
@@ -62,16 +65,21 @@ ep8 <- tabPanel(
     倒是逛steam的时候发现了Dorfromantik和ISLANDERS这两个宝藏游戏。
     配上来美国后第一次点的KFC，这假期属于是太治愈了。
     （炸鸡可比麦当劳带劲多了，就是离太远了）"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "80%", style=sty),
   hr(),
   h4("西雅图中心"),
   p("来西雅图快半年了，居然这周才第一次去市中心属于是奇葩了。
     （我寻思我也算经常出去玩了吧）
     不过事实证明市中心除了建筑和景观值得一看之外确实也没啥好玩的了。
     就当是打卡Space Needle了。"),
+  tags$img(src = paste0(link,"2.jpeg"), width = "80%", style=sty),
   p("眼看时间还早，于是决定顺便去Chinatown看看。
     这是我第二次去Chinatown（第一次只是来吃了个饭），
     所以也算是初见吧。事实证明，这里也确实没什么好玩的。
     （但是好吃的很多）打卡+1。"),
+  tags$img(src = paste0(link,"3.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"4.jpeg"), width = "80%", style=sty),
   p("[*]总感觉这些唐人街的建筑风格有点过于传统和偏北方了，
     有没有江南风格唐人街啊。。。"),
   hr(),
@@ -82,14 +90,15 @@ ep8 <- tabPanel(
     （哪怕这其中带有一些理想主义色彩）"),
   p("有一说一，至少在这件事上国内不同的声音可比外网多太多了。
     但是无论观点如何，拿战争开玩笑口嗨属于是过于没有脑子了。"),
+  tags$img(src = paste0(link,"5.jpeg"), width = "80%", style=sty),
   p("[*]我们的校园广场叫Red Square，也就是红场，
     红场上常年都是中国旗，香港旗，台湾旗，韩国旗和日本旗五家
     （说三家可能更好）分庭抗礼，但乌克兰一来全靠边站了。
     （星条旗竟不配拥有姓名（wu））"),
+  tags$img(src = paste0(link,"6.jpeg"), width = "80%", style=sty),
   hr(),
   p("（2022年7月的我表示）没想到我鸽了这么久结果这仗还没打完。
-    虽然俄罗斯前不久似乎取得了一些关键性战果，
-    不过离结束怕是还有不少时间。以我的观察，
+    虽然最近似乎有了一些进展，不过离结束怕是还有不少时间。以我的观察，
     这几个月来国内互联网上很多人对这场战争的认识都有了很大的变化。
     不过回顾我当时的言论倒是没啥要改的。")
 )

@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/5."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep5 <- tabPanel(
   "EP5. 2022WI 第五周",
   titlePanel("EP5. 2022WI 第五周"),
@@ -11,7 +14,9 @@ ep5 <- tabPanel(
     这怕不是创下我一顿吃最多鱼的记录了。美中不足的是，
     因为要烧的东西过多，于是我们图方便直接把春卷放进了微波炉，
     结果虽然熟了，看着也不错，但完全不脆的样子。"),
-  p("（很浪漫啊有没有）"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"2.jpeg"), width = "80%", style=sty),
   hr(),
   h4("玉玉"),
   p("大年初三，难得闲暇的下午，我半倚在床上在淅淅沥沥的雨声中迷失了。"),
@@ -59,6 +64,13 @@ ep5 <- tabPanel(
   p("我尝试着去思考些什么，却又觉此时本就无须其他。
     我沉默地看着天边的金光化作赤红，起身离开海角这僻静的一隅。
     人群聚集之处，灯塔兀自闪烁着光芒，人们望着西边的霞光，世界依旧寂静无声。"),
+  tags$img(src = paste0(link,"3.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"4.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"5.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"6.jpeg"), width = "80%", style=sty),
   hr(),
   p("[*]比起每周的总结，果然还是片刻的随想更值得铭记——
     全放一起写就成汇报工作，毫无美感了。果然还是不能太偷懒。"),

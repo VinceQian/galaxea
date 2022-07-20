@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/7."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep7 <- tabPanel(
   "EP7. 2022WI 第七周",
   titlePanel("EP7. 2022WI 第七周"),
@@ -7,15 +10,18 @@ ep7 <- tabPanel(
     然后就着一张图给我的重庆室友讲解常州话。不过吧，
     让我这种常州话听力8级口语2级（假设满级10）的人教学属于是两脸懵逼了，
     于是聊到最后顺利变成了室友的重庆话教学。（虽然我也没学会就是了）"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "80%", style=sty),
   hr(),
   h4("记一节水课"),
   p("讲景观设计的教授请了位漫画家来介绍怎么画有关景观的漫画。
     那么讲完后自然是喜闻乐见的动手环节。
     以我这小学生作画水平画EP2的湖畔公园属于是暴殄天物了——不过水课嘛，
     主要确实就是图一乐了。"),
+  tags$img(src = paste0(link,"2.jpeg"), width = "60%", style=sty),
   p("顺带一提，景观课的教室在量子工程楼（尽管这两者毫无关系），
     外墙是全景玻璃，总之挺公开处刑的。图为透过教室玻璃拍的学校行政楼。
     （校长：我坐在办公室里就能一眼把你望到底。）"),
+  tags$img(src = paste0(link,"3.jpeg"), width = "80%", style=sty),
   hr(),
   h4("ji第一次线下物理考试"),
   p("打拼音是因为我确实不知道打哪个ji比较合适——它可以是记，也可以是寄或者祭。"),
@@ -39,10 +45,12 @@ ep7 <- tabPanel(
     以上酱料均为买麦当劳存下的，结论就是，
     以后去麦当劳最优解是酱料全选蜂蜜拿回去泡茶喝。"),
   p("以及，这里面最好吃的是粽子和老干妈。"),
+  tags$img(src = paste0(link,"4.jpeg"), width = "80%", style=sty),
   hr(),
   h4("大清洗"),
   p("想起上次大清洗好像还是上次，所以这次大清洗就选在了这次。
     于是现在房间长这样。（那个无线充电音箱灯还挺好用）"),
+  tags$img(src = paste0(link,"5.jpeg"), width = "80%", style=sty),
   hr(),
   p("[*]这周没出去玩，明天总统日放假出去转转。"),
   p("[**]个人感觉冬奥会的闭幕式比开幕式好看啊。"),

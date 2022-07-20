@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/10."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep10 <- tabPanel(
   "EP10. 2022WI 第十周&第十一周",
   titlePanel("EP10. 2022WI 第十周&第十一周"),
@@ -28,6 +31,11 @@ ep10 <- tabPanel(
   p("作为一个城市动物园，虽然园方已尽力还原野外环境，但毕竟场地有限，
     有些动物并不活跃，也许有些动物在这里并不十分开心吧。"),
   p("放上我看到的最有表现力的几只动物的照片吧。"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"2.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"3.jpeg"), width = "80%", style=sty),
   hr(),
   h4("《死线战士：后记》"),
   p("搞定所有任务后的我又去哪了呢？答案是学校。
@@ -36,12 +44,22 @@ ep10 <- tabPanel(
     虽然这周天气并不算好，但连片的花海依旧吸引来了校内校外的一大票游客——
     我们甚至遇到了从800里开外专门来这看樱花的。"),
   p("樱花树下是人与狗的狂欢，这种纯粹快乐的场景可算是如今不可多得的美好了。"),
+  tags$img(src = paste0(link,"4.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"5.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"6.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"7.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"8.jpeg"), width = "60%", style=sty),
   hr(),
   p("回去之后做了火锅——条件所迫只能在灶上烧一会儿端上桌吃一会儿了。
     吃得挺香，只是我的重庆室友放了（连他自己也觉得）过于多的辣椒，
     只能说吃完之后浑身都通畅了——"),
   p("——“着火了着火了着火了”"),
   p("——“嗨呀我也是”（抽象语言大赏了属于是）"),
+  tags$img(src = paste0(link,"9.jpeg"), width = "80%", style=sty),
   hr(),
   p("[*]冬季学期就这么结束啦，希望假期不摆烂。（虽然也就一星期）"),
   p("[**]这学期的表现有点憨憨了，下学期继续加油吧。"),

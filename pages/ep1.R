@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/1."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep1 <- tabPanel(
   "EP1. 2022WI 第一周",
   titlePanel("EP1. 2022WI 第一周"),
@@ -5,6 +8,7 @@ ep1 <- tabPanel(
   p("Winter Quarter从周一早八点的物理课开始。化学，数学和统计紧随其后，
     勾勒出一幅地狱绘图。事实证明，选课时的我和上课时的我确实是两个物种，
     于是在认真思考人生三问后，我果断地进行了一个课的调。"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "60%", style=sty),
   p("一月初的西雅图，温度稍有回暖，存在了快半个月的积雪慢慢消融。
     前些天的倾盆暴雨让温度一夜降回从前的同时，也顺带着带走了最后的残雪。
     不得不感叹校长的英明神武，第一周上网课的决定让雨雪都变成了窗外交替的景致。
@@ -18,7 +22,11 @@ ep1 <- tabPanel(
     （诈骗和骚扰的倒是不少）"),
   p("冰雪消融，风雨过后，在学校西区饱餐一顿。
     （这好像是我第一次吃这种馍？味道还可以的样子）"),
+  tags$img(src = paste0(link,"2.jpeg"), width = "80%", style=sty),
   p("来看Diana Hadid大大的艺术展～"),
+  tags$img(src = paste0(link,"3.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"4.jpeg"), width = "60%", style=sty),
   hr(),
   p("[另]鉴于刚来到西雅图时的我内心居然毫无波澜，之后的经历又要么无聊到懒得写，
     要么忙到来不及写，要么玩到不想写，于是整个2021AU学期便成了谜一般的存在。

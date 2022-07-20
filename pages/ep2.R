@@ -1,3 +1,6 @@
+link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/2."
+sty <- "display: block; margin-left: auto; margin-right: auto;"
+
 ep2 <- tabPanel(
   "EP2. 2022WI 第二周",
   titlePanel("EP2. 2022WI 第二周"),
@@ -9,10 +12,21 @@ ep2 <- tabPanel(
     可惜这群人的签名属实是别具一格了。
     我突然开始觉得是不是我的问题了，
     难道签名确实就应该是像他们这样的吗。。。"),
+  tags$img(src = paste0(link,"1.jpeg"), width = "80%", style=sty),
   p("冰雪才散去一个星期，春天便近在眼前了。乘着一个风和日丽的下午，
     和Dylan一起走进了Union Bay Natural Area。
     在湖畔看见了一位写作者，一路上又认识了一位鸟类摄影师。"),
+  tags$img(src = paste0(link,"2.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"3.jpeg"), width = "80%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"4.jpeg"), width = "80%", style=sty),
   p("和路边的一棵树互相瞪眼，和草地上的一群鸭子共赏日落。"),
+  tags$img(src = paste0(link,"5.jpeg"), width = "60%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"6.jpeg"), width = "60%", style=sty),
+  p(""),
+  tags$img(src = paste0(link,"7.jpeg"), width = "80%", style=sty),
   p("一路上光是我知道名字的鸟就出现了好多种，可惜初次到来没带相机，
     错过了拉近仔细观察的机会，改天补上吧。
     这片湿地在1970年前还是西雅图的垃圾填埋场，
