@@ -45,5 +45,6 @@ ep2 <- tabPanel(
     （多样性Max了属于是）"),
   hr(),
   p("（2022年7月的我表示）Dylan已经不是脆鲨了，令人感叹。以及，
-    那棵和我瞪眼的树最近长这样。")
+    那棵和我瞪眼的树最近长这样。"),
+  tags$img(src = paste0(link,"8.jpg"), width = "60%", style=sty)
 )

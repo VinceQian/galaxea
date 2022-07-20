@@ -5,10 +5,10 @@ account: vinceqian
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 6512620
-bundleId: 6113933
+bundleId: 6114006
 url: https://vinceqian.shinyapps.io/galaxea/
-when: 1658281445.55328
-lastSyncTime: 1658281445.55344
+when: 1658283832.90812
+lastSyncTime: 1658283832.90815
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: backup/backupserver.R|backup/backupui.R|course/.DS_Store|course/addcourse.R|course/quarter.csv|course/type.csv|ep|location
