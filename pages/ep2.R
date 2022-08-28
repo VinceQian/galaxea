@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/2."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/2."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep2 <- tabPanel(
   "EP2. 2022WI 第二周",
   titlePanel("EP2. 2022WI 第二周"),
   h6("2022-01-15"),
+  fluidRow(column(10, offset = 1,
   p("新学期的第一堂线下课在一个细雨淋漓的下午，
     一堂以熟悉小组成员为主的实验课。其他三位分别是美国的黑人，
     白人和亚裔，多样性属于是拉满了。大家相谈甚欢
@@ -47,4 +49,5 @@ ep2 <- tabPanel(
   p("（2022年7月的我表示）Dylan已经不是脆鲨了，令人感叹。以及，
     那棵和我瞪眼的树最近长这样。"),
   tags$img(src = paste0(link,"8.jpg"), width = "60%", style=sty)
+  ))
 )

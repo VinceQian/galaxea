@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/6."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/6."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep6 <- tabPanel(
   "EP6. 2022WI 第六周",
   titlePanel("EP6. 2022WI 第六周"),
   h6("2022-02-13"),
+  fluidRow(column(10, offset = 1,
   h4("水门"),
   p("中规中矩的一周过去，周末却一时不知道去哪玩。想来上周去看了海，
     那这周就去华盛顿湖的入海口看看吧。湖通过几段人工的运河连接着大海，
@@ -36,5 +38,6 @@ ep6 <- tabPanel(
     而我们的10组大部分都只是乘方关系。"),
   p("赢！"),
   hr(),
-  p("[*]所以这周和上周对比可太鲜明了吧，一整周内心毫无波澜了属于是。"),
+  p("[*]所以这周和上周对比可太鲜明了吧，一整周内心毫无波澜了属于是。")
+  ))
 )

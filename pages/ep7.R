@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/7."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/7."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep7 <- tabPanel(
   "EP7. 2022WI 第七周",
   titlePanel("EP7. 2022WI 第七周"),
   h6("2022-02-21"),
+  fluidRow(column(10, offset = 1,
   h4("元宵灯会与常州话教学"),
   p("在某位热心同学三更半夜的共享之下，我云了一手迪诺水镇的灯会，
     然后就着一张图给我的重庆室友讲解常州话。不过吧，
@@ -58,4 +60,5 @@ ep7 <- tabPanel(
   p("[****]所以日志里的视频为啥点不开啊。。。。"),
   hr(),
   p("（2022年7月的我表示）大概明白怎么放视频上来了。")
+  ))
 )

@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/4."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/4."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep4 <- tabPanel(
   "EP4. 2022WI 第四周",
   titlePanel("EP4. 2022WI 第四周"),
   h6("2022-01-29"),
+  fluidRow(column(10, offset = 1,
   p("在一派新春会喜气洋洋的氛围下，我在这周喜迎期中考，
     然后寄了。（我也不知道到底寄没寄，
     不过鉴于我拜年祭抽卡抽到的都是反向flag，那我最好还是当它寄了吧）"),
@@ -51,4 +53,5 @@ ep4 <- tabPanel(
     虎年和老虎一样牛！（我觉得我应该可以不毒奶）"),
   hr(),
   p("（2022年7月的我表示）所以至今再也没去过那个植物园。")
+  ))
 )

@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/10."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/10."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep10 <- tabPanel(
   "EP10. 2022WI 第十周&第十一周",
   titlePanel("EP10. 2022WI 第十周&第十一周"),
   h6("2022-03-19"),
+  fluidRow(column(10, offset = 1,
   h4("《关于我的队友和我都是死线战士这回事》"),
   p("冬季学期的最后两周，复习，考试和各种期末的大作业自然是主旋律。"),
   p("不得不说，最后一周的业务确实极其繁忙，
@@ -68,4 +70,5 @@ ep10 <- tabPanel(
   hr(),
   p("（2022年7月的我表示）以上三条的结果分别是：
     还是摆了；有进步，但只能进步一点点；几天=3个月。")
+  ))
 )

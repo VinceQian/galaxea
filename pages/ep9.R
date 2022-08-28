@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/9."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/9."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep9 <- tabPanel(
   "EP9. 2022WI 第九周",
   titlePanel("EP9. 2022WI 第九周"),
   h6("2022-03-08"),
+  fluidRow(column(10, offset = 1,
   h4("煤气厂公园"),
   p("这里曾是一座煤气厂，而在它废弃之后，一座公园围绕着它残存的厂房建立起来。
     各种管道烟囱被画上了涂鸦改造成了有趣的模样，在多年之后，
@@ -47,5 +49,6 @@ ep9 <- tabPanel(
     只能说他们俩的中文水平和我的英语水平旗鼓相当。
     讲道理，听到他们说“Since we are all Chinese”的时候居然有种违和感。"),
   p("[***] 在图书馆的卫生间里看到的对话："),
-  tags$img(src = paste0(link,"3.jpeg"), width = "60%", style=sty),
+  tags$img(src = paste0(link,"3.jpeg"), width = "60%", style=sty)
+  ))
 )

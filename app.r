@@ -1,6 +1,4 @@
 # app.R
-# Authors: Kaia Truong, Aliya Ali, Randy Ros, Vince Qian
-# Final Deliverable INFO 201
 
 # Load library
 library("shiny")

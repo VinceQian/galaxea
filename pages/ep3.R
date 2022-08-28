@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/3."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/3."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep3 <- tabPanel(
   "EP3. 2022WI 第三周",
   titlePanel("EP3. 2022WI 第三周"),
   h6("2022-01-22"),
+  fluidRow(column(10, offset = 1,
   p("星期一是马丁·路德·金日，和Dylan想一起去西北黑人博物馆转转。
     时间选在下午，天气不错，在公交车上还遇到了刚刚结束纪念游行的人们。"),
   tags$img(src = paste0(link,"1.jpeg"), width = "60%", style=sty),
@@ -44,5 +46,6 @@ ep3 <- tabPanel(
   hr(),
   p("[另]某四个人回到常州想聚众玩耍，结果搞了半天居然是我选了地点，
     属实是憨憨了，就当云团建了。（为什么会有这么多选择困难症啊）"),
-  p("[再另]众所周知，每个学期的第4，7，10周是考试周，所以《害怕.jpg》。"),
+  p("[再另]众所周知，每个学期的第4，7，10周是考试周，所以《害怕.jpg》。")
+  ))
 )

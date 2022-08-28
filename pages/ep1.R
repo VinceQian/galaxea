@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/1."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/1."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep1 <- tabPanel(
   "EP1. 2022WI 第一周",
   titlePanel("EP1. 2022WI 第一周"),
   h6("2022-01-08"),
+  fluidRow(column(10, offset = 1,
   p("Winter Quarter从周一早八点的物理课开始。化学，数学和统计紧随其后，
     勾勒出一幅地狱绘图。事实证明，选课时的我和上课时的我确实是两个物种，
     于是在认真思考人生三问后，我果断地进行了一个课的调。"),
@@ -43,4 +45,6 @@ ep1 <- tabPanel(
   hr(),
   p("（2022年7月的我表示）虽然2022SP学期现在看样子也要成为谜了，
     不过补档什么的现在也许可以搞了。以及，我这个月又录了首歌。")
+  )
+  )
 )

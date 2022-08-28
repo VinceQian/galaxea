@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/8."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/8."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep8 <- tabPanel(
   "EP8. 2022WI 第八周",
   titlePanel("EP8. 2022WI 第八周"),
   h6("2022-02-26"),
+  fluidRow(column(10, offset = 1,
   h4("梦流转"),
   p("“我昨天晚上做了一个梦，”去往教室的路上，一位同行者对我说，
     “我记不太清具体发生哪些事了，但我保证我说出来的东西都是我在梦里经历的。”"),
@@ -101,4 +103,5 @@ ep8 <- tabPanel(
     虽然最近似乎有了一些进展，不过离结束怕是还有不少时间。以我的观察，
     这几个月来国内互联网上很多人对这场战争的认识都有了很大的变化。
     不过回顾我当时的言论倒是没啥要改的。")
+  ))
 )

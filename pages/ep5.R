@@ -1,10 +1,12 @@
 link <- "https://raw.githubusercontent.com/VinceQian/galaxea/main/ep/5."
+#link <- "https://gitee.com/vinceqian/galaxea/raw/main/ep/5."
 sty <- "display: block; margin-left: auto; margin-right: auto;"
 
 ep5 <- tabPanel(
   "EP5. 2022WI 第五周",
   titlePanel("EP5. 2022WI 第五周"),
   h6("2022-02-05"),
+  fluidRow(column(10, offset = 1,
   h4("乐"),
   p("大年初一，恰逢大伙儿期中考完，而成绩未知的黄金时刻。"),
   p("抛开大家都说自己考炸了不谈，新年的第一餐自然是要吃好。
@@ -83,4 +85,5 @@ ep5 <- tabPanel(
     Garrett预约了更换，当天就给免费送了个新的来。"),
   p("[****]Aaaaaughibbrgubugbugrguburgle!
     ——钱同学在看到大海的第一秒发出的奇怪叫声。")
+  ))
 )
