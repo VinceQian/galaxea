@@ -8,6 +8,7 @@ library("maps")
 library("bslib")
 
 source("pages/homepage.R")
+source("pages/ep12.R")
 source("pages/ep11.R")
 source("pages/ep10.R")
 source("pages/ep9.R")
@@ -39,7 +40,8 @@ ui <- dashboardPage(
                menuSubItem("EP8. 2022WI 第八周", tabName = "ep8"),
                menuSubItem("EP9. 2022WI 第九周", tabName = "ep9"),
                menuSubItem("EP10. 2022WI 第十周", tabName = "ep10"),
-               menuSubItem("EP11. 大二总结", tabName = "ep11")
+               menuSubItem("EP11. 大二总结", tabName = "ep11"),
+               menuSubItem("EP12. 夏日遐思", tabName = "ep12")
       ),
       menuItem("相册(敬请期待)", icon = icon("camera")
                
@@ -62,7 +64,8 @@ ui <- dashboardPage(
       tabItem(tabName = "ep8", ep8),
       tabItem(tabName = "ep9", ep9),
       tabItem(tabName = "ep10", ep10),
-      tabItem(tabName = "ep11", ep11)
+      tabItem(tabName = "ep11", ep11),
+      tabItem(tabName = "ep12", ep12)
     )
   )
 )
