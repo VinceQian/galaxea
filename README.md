@@ -13,3 +13,6 @@
 
   - Still far from done.
   - 远未完成。
+
+  - Written in Chinese.
+  - 中文写的。
